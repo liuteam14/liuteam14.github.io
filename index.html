@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        
+        nav {
+            background: #e8491d;
+            color: white;
+        }
+        
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            padding: 15px 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px 0;
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e8491d;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="个人照片" class="profile-img">
+            <h1>张三的个人主页</h1>
+            <p>Web开发者 | 设计师 | 技术爱好者</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#skills">技能</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>关于我</h2>
+            <p>你好！我是张三，一名充满激情的Web开发者和设计师。我热爱创造美观且功能强大的网站，喜欢学习新技术并解决复杂问题。</p>
+            <p>在我的空闲时间，我喜欢摄影、旅行和阅读科技博客。</p>
+        </section>
+        
+        <section id="skills">
+            <h2>我的技能</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript & jQuery</li>
+                <li>React & Vue.js</li>
+                <li>PHP & MySQL</li>
+                <li>UI/UX设计</li>
+                <li>Photoshop & Illustrator</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>我的项目</h2>
+            <article>
+                <h3>个人博客系统</h3>
+                <p>一个使用React和Node.js构建的全栈博客系统，支持Markdown编辑和用户评论。</p>
+            </article>
+            <article>
+                <h3>电子商务网站</h3>
+                <p>为本地商家开发的响应式电商平台，集成了支付系统和库存管理。</p>
+            </article>
+        </section>
+        
+        <section id="contact">
+            <h2>联系我</h2>
+            <p>邮箱: <a href="mailto:zhangsan@example.com">zhangsan@example.com</a></p>
+            <p>电话: 123-456-7890</p>
+            <p>社交媒体: 
+                <a href="#">LinkedIn</a> | 
+                <a href="#">GitHub</a> | 
+                <a href="#">Twitter</a>
+            </p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 张三的个人主页. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
